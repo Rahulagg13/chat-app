@@ -4,6 +4,7 @@ const User = require("../Models/UserModel");
 
 const accessChat = asyncHandler(async (req, res) => {
   const { userId } = req.body;
+  console.log(userId);
   if (!userId) {
     return res.status(400).json({
       status: "failed",
